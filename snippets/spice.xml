@@ -8,6 +8,10 @@
         fetch="https://github.com/SpiceOS-Next"
         revision="13" />
 
+    <remote name="spiceos"
+        fetch="https://github.com/SpiceOS"
+        revision="13" />
+
     <remote  name="arrow"
             fetch="https://github.com/ArrowOS"
             review="https://review.arrowos.net/"
@@ -38,6 +42,11 @@
 
   <!-- bootable repos -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="spiceos-next" />
+
+  <!-- device repos -->
+  <project path="device/spiceos/sepolicy" name="android_device_spiceos_sepolicy" remote="spiceos" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="spiceos" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="spiceos" />
 
   <!-- external repos -->
   <project path="external/json-c" name="LineageOS/android_external_json-c" remote="lineage" />
